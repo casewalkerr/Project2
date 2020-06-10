@@ -67,10 +67,16 @@ html {
   line-height: 67px;
   font-style: normal;
 }
-.price-card .blue {
+
+.price-card-1 .green {
+  background-color: #5BB189;
+}
+
+.price-card-2 .blue {
   background-color: #3A6BA5;
 }
-.price-card .orange {
+
+.price-card-3 .orange {
   background-color: #EC632A;
 }
 

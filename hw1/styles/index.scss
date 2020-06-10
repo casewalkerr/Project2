@@ -1,8 +1,9 @@
+@import 'variables.scss';
 *{
     box-sizing: border-box;
 }
 html {
-    font-family: Montserrat, sans-serif;
+    font-family: $font-family;
 }
 .page {
     display: flex;
@@ -26,7 +27,7 @@ html {
     flex-direction: column;
     width: 380px;
     height: 770px;
-    background-color: #334247;
+    background-color: $price-card-background;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
     margin: 0px 9px 0px 9px;
     color: #fff;
@@ -61,14 +62,25 @@ html {
         line-height: 67px;
         font-style: normal;
         }
+    } 
+} 
+.price-card-1 {
+    & .green {
+        background-color: $green-color;
     }
+   
+ }
+.price-card-2 {
     & .blue {
-        background-color: #3A6BA5;
+        background-color: $blue-color;
     }
-    & .orange {
-        background-color: #EC632A;
-    }  
 }
+.price-card-3 {
+    & .orange {
+        background-color: $orange-color;
+    }
+}
+
 
 .price-card__description {
     margin-top: 40px;
@@ -117,13 +129,13 @@ li:nth-child(odd) {
     margin: 39px 113px 40px 112px;
     border: none;
     &.green {
-        background-color: #5BB189;
+        background-color: $green-color;
     }
     &.blue {
-        background-color: #3A6BA5;
+        background-color: $blue-color;
     }
     &.orange {
-        background-color: #EC632A;
+        background-color: $orange-color;
     }
     
     &-text {
